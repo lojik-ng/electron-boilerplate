@@ -1,4 +1,4 @@
-const { app, Menu, BrowserWindow, shell, ipcMain } = require('electron');
+const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
 
@@ -31,9 +31,6 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
     createWindow();
-    app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    })
 })
 
 
