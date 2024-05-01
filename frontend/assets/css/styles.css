@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    /* Include other formats like WOFF for broader compatibility, if available */
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    /* Include other formats like WOFF for broader compatibility, if available */
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    /* Include other formats like WOFF for broader compatibility, if available */
+}
+
+@font-face {
+    font-family: 'Neuton';
+    src: url('../fonts/Neuton-Regular.ttf') format('truetype');
+}
+
+
+html,
+body {
+    font-family: Gilroy-Regular;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+
+}
+body{
+    padding-top: 60px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Gilroy-Bold;
+    font-weight: 400;
+}
+
+
+
+.nav-item {
+    padding: 0px;
+    gap: 10px;
+    margin: 0px 2px 0px 2px;
+    font-family: Gilroy-Medium;
+
+}
+.nav-link{
+    margin: 0px;
+}
+
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Latest compiled and minified CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/w3.css" rel="stylesheet" />
+		<link href="assets/css/toastify.min.css" rel="stylesheet" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark border-bottom border-secondary"
+		>
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Home</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="settings.html">Settings</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h2>About Me</h2>
+					<h5>Photo of me:</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Bootstrap 5 and w3.css are already loaded locally.</p>
+					<h3 class="mt-4">Some Links</h3>
+					<p>All frontend files are loaded from the root folder "frontend".</p>
+					<ul class="nav nav-pills flex-column">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								onclick="Session.showAlert('Sample error alert','danger')"
+								href="#"
+								>Click to Show Alert</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								onclick="Session.showAlert('Sample success alert','success')"
+								href="#"
+								>Click to Show Alert</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								onclick="Session.showAlert('Sample warning alert','warning')"
+								href="#"
+								>Click to Show Alert</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<hr class="d-sm-none" />
+				</div>
+				<div class="col-sm-8">
+					<h2>TITLE HEADING</h2>
+					<h5>Title description, Dec 7, 2020</h5>
+					<div class="fakeimg">Fake Image</div>
+					<p>Some text..</p>
+					<p id="demo"></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/toastify-js.js"></script>
+		<script src="assets/js/Session.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			const text = window.API.fs.readFileSync("delete.txt", "utf8");
+			document.getElementById("demo").innerHTML = text;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,4 @@
+If you can see this, then fs is accessible.
+<h4>This text is loaded from delete.txt in the root directory of the application with nodeJS fs module in index.html</h4>
+See preload.js to see how to make nodeJS modules accessible in the frontend html/js.<br /><hr /><br />
+See usage at the bottom of frontend/index.html.

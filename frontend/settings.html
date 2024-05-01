@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Latest compiled and minified CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/w3.css" rel="stylesheet" />
+		<link href="assets/css/toastify.min.css" rel="stylesheet" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark border-bottom border-secondary"
+		>
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="settings.html">Settings</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<h2>Settings</h2>
+			<p>Edit Application Settings</p>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="baseUrl" class="form-label"
+							>OpenAI baseUrl (Using OpenAI Library):</label
+						>
+						<input
+							type="text"
+							class="form-control setting"
+							id="baseUrl"
+							placeholder="Enter baseUrl"
+							name="baseUrl"
+							onchange="saveSettings()"
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="key" class="form-label">OpenAI Key:</label>
+						<input
+							type="text"
+							class="form-control setting"
+							id="key"
+							placeholder="Enter Key"
+							name="key"
+							onchange="saveSettings()"
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="model" class="form-label">Model:</label>
+						<input
+							type="text"
+							class="form-control setting"
+							id="model"
+							placeholder="Enter Model"
+							name="model"
+							onchange="saveSettings()"
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="model" class="form-label">Application Theme:</label>
+						<select
+							class="form-control setting"
+							id="data-bs-theme"
+							name="data-bs-theme"
+							onchange="saveSettings()"
+						>
+							<option value="light">light</option>
+							<option value="dark">dark</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="notificationDuration" class="form-label"
+							>Notification Duration (seconds):</label
+						>
+						<input
+							type="text"
+							value="10"
+							class="form-control setting"
+							id="notificationDuration"
+							placeholder="Enter Notification Duration"
+							name="notificationDuration"
+							onchange="saveSettings()"
+						/>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="notificationVolume" class="form-label"
+							>Notification Audio Volume:</label
+						>
+						<select
+							class="form-control setting"
+							id="notificationVolume"
+							name="notificationVolume"
+							onchange="saveSettings()"
+						>
+							<option value="0">0 (Silent)</option>
+							<option value="0.1">10%</option>
+							<option value="0.2">20%</option>
+							<option value="0.3">30%</option>
+							<option value="0.4">40%</option>
+							<option value="0.5">50%</option>
+							<option value="0.6">60%</option>
+							<option value="0.7">70%</option>
+							<option value="0.8">80%</option>
+							<option value="0.9">90%</option>
+							<option value="1">100%</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="notificationPosition" class="form-label"
+							>Notification Position:</label
+						>
+						<select
+							class="form-control setting"
+							id="notificationPosition"
+							name="notificationPosition"
+							onchange="saveSettings()"
+						>
+							<option value="top">Top</option>
+							<option value="bottom">Bottom</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="mb-3 mt-3">
+						<label for="notificationAlignment" class="form-label"
+							>Notification Alignment:</label
+						>
+						<select
+							class="form-control setting"
+							id="notificationAlignment"
+							name="notificationAlignment"
+							onchange="saveSettings()"
+						>
+							<option value="left">Left</option>
+							<option value="center">Center</option>
+							<option value="right">Right</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/toastify-js.js"></script>
+		<script src="assets/js/Session.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/settings.js"></script>
+	</body>
+</html>
